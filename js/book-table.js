@@ -8,12 +8,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDhF7nVMK_x-Uj2zs0xkqSeXP_vcuMFouI",
-  authDomain: "hiran-assigment.firebaseapp.com",
-  projectId: "hiran-assigment",
-  storageBucket: "hiran-assigment.firebasestorage.app",
-  messagingSenderId: "8251239635",
-  appId: "1:8251239635:web:510745fdfb0f0d4862f826",
+  apiKey: "AIzaSyDrrBuVj_o_ds3KLRnF9w2QutwaQORkPCQ",
+  authDomain: "hiran-project-acf5f.firebaseapp.com",
+  projectId: "hiran-project-acf5f",
+  storageBucket: "hiran-project-acf5f.firebasestorage.app",
+  messagingSenderId: "204945321402",
+  appId: "1:204945321402:web:33c348718f967a7d464183"
 };
 
 const app = initializeApp(firebaseConfig);
