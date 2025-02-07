@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Gallery | The Bhojan Table Restaurant</title>
+    <meta
+      content="The Bhojan Table is a hotel that specializes in serving authentic Nepali cuisine, offering a rich dining experience with traditional flavors, locally sourced ingredients, and warm hospitality."
+      name="description"
+    />
+    <meta
+      content="The Bhojan table, Best Restaurant, No.1 Restaurant"
+      name="keywords"
+    />
+    <meta content="Hiran Thapa" name="author" />
+    <meta name="robots" content="index,follow" />
+
+    <link href="assets/img/favicon.ico" rel="icon" />
+    <link href="assets/img/apple-touch-icon.ico" rel="apple-touch-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+  </head>
+
+  <body>
+    <!--
+    ___________HEADER____________
+    -->
+    <header
+      id="header"
+      class="fixed-top d-flex align-items-center header-transparent"
+    >
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <div class="logo me-auto">
+          <h1><a href="index.html">The Bhojan Table</a></h1>
+        </div>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link" href="/">Home</a></li>
+            <li><a class="nav-link" href="/about.html">About</a></li>
+            <li>
+              <a class="nav-link active" href="/gallery.html">Gallery</a>
+            </li>
+            <li><a class="nav-link" href="/menu.html">Menu</a></li>
+            <li>
+              <a class="nav-link" href="/contact-us.html">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+        <button
+          class="book-a-table-btn"
+          data-toggle="modal"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#book-table-model"
+        >
+          Reserve a table
+        </button>
+      </div>
+    </header>
+
+    <!--
+    _____________MODEL__________
+    -->
+    <section
+      class="modal fade"
+      id="book-table-model"
+      tabindex="-1"
+      aria-labelledby="book-table-modelLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="book-table-modelLabel">Book a table</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <section id="book-a-table" class="book-a-table p-0">
+            <div class="container max-width-container">
+              <form role="form" class="email-form">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 4 chars"
+                      autocomplete="off"
+                    />
+                    <div class="validate" id="name-validate"></div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      data-rule="email"
+                      data-msg="Please enter a valid email"
+                      autocomplete="off"
+                    />
+                    <div class="validate" id="email-validate"></div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="phone"
+                      id="phone"
+                      placeholder="Your Phone"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 4 chars"
+                      autocomplete="off"
+                    />
+                    <div class="validate" id="phone-validate"></div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input
+                      type="text"
+                      name="date"
+                      class="form-control"
+                      id="date"
+                      placeholder="Date"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 4 chars"
+                      autocomplete="off"
+                    />
+                    <div class="validate" id="date-validate"></div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="time"
+                      id="time"
+                      placeholder="Time"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 4 chars"
+                      autocomplete="off"
+                    />
+                    <div class="validate" id="time-validate"></div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="people"
+                      id="people"
+                      placeholder="Number of people"
+                      data-rule="minlen:1"
+                      data-msg="Please enter at least 1 chars"
+                      autocomplete="off"
+                    />
+                    <div class="validate" id="people-validate"></div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    autocomplete="off"
+                  ></textarea>
+                  <div class="validate" id="message-validate"></div>
+                </div>
+                <div class="text-center">
+                  <button
+                    type="button"
+                    id="send-message-btn"
+                    class="primary-button"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!--
+    ________________GALLERY HERO_________________
+    -->
+    <section id="hero-gallery">
+      <div class="carousel-inner">
+        <div
+          class="hero-gallery-item"
+          style="background-image: url(assets/img/gallery/people-04.jpeg)"
+        >
+          <div class="hero-gallery-contents">
+            <h2 class="animate__animated animate__fadeInDown">
+              <span>The Bhojan Table</span> Restaurant
+            </h2>
+            <p class="animate__animated animate__fadeInUp">Gallery</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+    ____________MAIN_______________
+    -->
+    <main id="main">
+      <section id="gallery" class="gallery">
+        <div class="container-fluid max-width-container">
+          <div class="section-title">
+            <h2>Some photos from <span>Our Restaurant</span></h2>
+          </div>
+          <div class="row g-2">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="assets/img/images/mixed.jpeg">
+                  <img
+                    src="assets/img/images/mixed.jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/people-03.jpeg">
+                  <img
+                    src="assets/img/gallery/people-03.jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/people-04.jpeg">
+                  <img
+                    src="assets/img/gallery/people-04.jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="assets/img/images/cupcake.jpeg">
+                  <img
+                    src="assets/img/images/cupcake.jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="assets/img/images/dhedo.jpeg">
+                  <img
+                    src="assets/img/images/dhedo.jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="assets/img/images/mixed.jpeg">
+                  <img
+                    src="assets/img/images/mixed.jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="assets/img/images/momo.jpeg">
+                  <img
+                    src="assets/img/images/momo.jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="assets/img/images/rasbari.jpeg">
+                  <img
+                    src="assets/img/images/rasbari.jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--
+    ____________FOOTER_______________
+    -->
+    <footer id="footer">
+      <div class="container">
+        <h3>The Bhojan Table</h3>
+        <p>
+          The Bhojan Table is specialized in Nepali Healthy, Tasty and Unique
+          Foods
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/" class="facebook"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/" class="instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>The Bhojan Table</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./js/book-table.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+#hero-menu {
+  width: 100%;
+  height: 40vh;
+  background-color: #dacdbc;
+  overflow: hidden;
+  padding: 0;
+}
+#hero-menu .hero-menu-item {
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#hero-menu .hero-menu-item::before {
+  content: "";
+  background-color: rgba(12, 11, 10, 0.85);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#hero-menu .hero-menu-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#hero-menu h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+#hero-menu h2 span {
+  color: #ffb03b;
+}
+#hero-menu p {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
